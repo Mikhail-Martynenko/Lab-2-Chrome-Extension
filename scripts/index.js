@@ -44,7 +44,7 @@ addMessage.addEventListener('keydown', function(e) {
   todo: addMessage.value,
   checked:false
  };
- todoList.push(newTodo);
+ todoList.unshift(newTodo);
  displayMessages();
  localStorage.setItem('todo', JSON.stringify(todoList));
  addMessage.value = '';
