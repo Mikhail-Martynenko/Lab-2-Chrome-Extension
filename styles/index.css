@@ -1,0 +1,144 @@
+*, *::before, *::after { 
+  padding: 0; margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100% !important;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7F8FC;
+}
+
+.container {
+  overflow: auto;
+  position: absolute;
+  width: 431px;
+  height: 461px;
+  border: 1px solid #E8E8E8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ background-color: white;
+}
+/*Scroll*/
+::-webkit-scrollbar-track{background-color: #F5F5F5;border-radius: 10px;}
+::-webkit-scrollbar{width: 10px;background-color: #F5F5F5;}
+::-webkit-scrollbar-thumb
+{
+    background-color: #AAA;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(90deg,
+    rgb(29, 202, 14) 25%,
+   transparent 25%,
+   transparent 50%,
+   rgb(29, 202, 14) 50%,
+   rgb(29, 202, 14) 75%,
+   transparent 75%,
+   transparent)
+}
+
+.button {
+  width: 74px;
+  height: 24px;
+  border: 1px solid #E8E8E8;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.day{
+position: absolute;
+left: 670px;
+ top: 50px;
+
+font-family: Product Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 42px;
+line-height: 40px;
+ display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.02em;
+color: #424242;
+}
+/* Весь лист
+.todo_list{
+  position: relative;
+ top :100px ;
+}*/
+.message{
+  display: grid;
+ position: absolute;
+ width: 88px;
+ height: 16px;
+ left: 50px;
+ top: 420px;
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 15px;
+ line-height: 16px;
+ align-items: center;
+ text-align: center;
+ letter-spacing: 0.02em;
+ color: #A5A5A5;
+}
+.todo {
+padding-left: 0; 
+}
+.todo li {
+  display: block;
+ padding: 1em;
+ position: relative;
+ list-style-type: none;
+ background: #dee0e7;
+ border-radius: 8px;
+   }
+  
+input[type=checkbox], label {
+  width: 20px;
+  height: 20px;
+  
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #252526; 
+}
+/*Добавляющиеся задачи*/
+.todo{
+  display: grid;
+  grid-template-columns: 410px;
+  grid-gap: 0.5em;
+}
+.wrapper{
+  display: grid;
+  overflow: auto;
+  width: 430px;
+  height: 261px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ background-color: white;
+}
